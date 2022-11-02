@@ -12,8 +12,8 @@ from timeloop import Timeloop
 from datetime import timedelta
 
 def getStockData(ticker):
-    base_url = "https://financialmodelingprep.com/api/v3/quote/"
-    key = "YOUR API KEY"
+    base_url = "https://financialmodelingprep.com/api/v3/quote/AAPL?apikey=29b29ff44ea6013147a739a68297c040"
+    key = "29b29ff44ea6013147a739a68297c040"
     full_url = base_url + ticker + "?apikey=" + key
     r = requests.get(full_url)
     stock_data= r.json()
